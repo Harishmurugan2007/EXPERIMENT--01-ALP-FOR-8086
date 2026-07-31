@@ -1,7 +1,8 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+
+# Name : Harish M
+# Roll no: 212224110021
+# Date of experiment : 31/07/2026
 
 
 
@@ -77,28 +78,200 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+## Addition  of 16 bit ALP 
 
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+add ax, bx
+mov [1200h], ax
+
+hlt
+```
 
 
 ## Output  
+
+<img width="1917" height="1135" alt="image" src="https://github.com/user-attachments/assets/d225198c-bbb1-4358-a52a-ac89fb4e6ce8" />
+
  
-## Subtraction   of 8 bit numbers  ALP 
+## Subtraction   of 16 bit numbers  ALP 
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+sub ax, bx
+mov [1200h], ax
+
+hlt
+```
  
 ## Output  
+<img width="1917" height="1131" alt="image" src="https://github.com/user-attachments/assets/92487a9d-1101-4313-b306-cb417416ae87" />
+
+
+
+
 ## Multiplication alp 
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+mul bx
+
+mov [1200h], ax
+mov [1202h], dx
+
+hlt
+```
  ## Output  
+
+<img width="1917" height="1096" alt="image" src="https://github.com/user-attachments/assets/cd038ba9-42ba-4e4e-a23f-669ffd81e01b" />
+
+
 
 
 ## Division alp 
 
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+mov dx, 0000h
+div bx
+
+mov [1200h], ax
+mov [1202h], dx
+
+hlt
+```
+
+
+
 ## Output  
+
+<img width="1917" height="1136" alt="image" src="https://github.com/user-attachments/assets/4ad65640-5c1f-4823-a980-451eb3e4fbd7" />
+
+
+# AND 
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+and ax, bx
+mov [1200h], ax
+
+hlt
+```
+
+# OUTPUT
+
+<img width="1917" height="1133" alt="image" src="https://github.com/user-attachments/assets/fe8ce356-a6a5-4539-8175-cb68966e03b2" />
+
+
+
+# NAND 
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+and ax, bx
+not ax
+mov [1200h], ax
+
+hlt
+```
+# OUTPOT
+
+<img width="1916" height="1133" alt="image" src="https://github.com/user-attachments/assets/da47fe36-189a-4712-9704-1e9de59265fa" />
+
+
+# OR 
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+or ax, bx
+mov [1200h], ax
+
+hlt
+```
+
+# OUTPUT
+
+<img width="1917" height="1135" alt="image" src="https://github.com/user-attachments/assets/f38e84dd-19bc-4e1c-a3bd-ee69c75cb9f4" />
+
+
+# NOR 
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+or ax, bx
+not ax
+mov [1200h], ax
+
+hlt
+```
+# OUTPUT
+
+<img width="1917" height="1132" alt="image" src="https://github.com/user-attachments/assets/36221dfa-03d3-4559-8268-a8d8a8041724" />
+
+
+# XOR
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+xor ax, bx
+mov [1200h], ax
+
+hlt
+```
+
+# OUTPUT
+
+<img width="1917" height="1135" alt="image" src="https://github.com/user-attachments/assets/c1e5b658-79d4-4861-9c84-21dcb6ee1933" />
+
+
+# XNOR 
+
+```
+org 100h
+
+mov ax, [1100h]
+mov bx, [1102h]
+xor ax, bx
+not ax
+mov [1200h], ax
+
+hlt
+```
+# OUTPUT
+<img width="1917" height="1131" alt="image" src="https://github.com/user-attachments/assets/64ca21d8-6385-4153-88d7-f06fd633e91c" />
+
 
 
 ## Result :
  
 
-
+Thus, the programs were executed successfully.
 
 
 
